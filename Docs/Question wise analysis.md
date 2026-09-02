@@ -1,119 +1,268 @@
-## Basic Questions — Findings & Insights
-1. What is the average rating of apps?
+# Google Play Store Analytics --- Question-Wise Findings & Insights
 
-Finding: The average app rating is 4.17 out of 5, indicating that apps in the dataset generally receive positive user ratings.
+## Basic Questions
 
-Insight: Overall user satisfaction appears relatively strong, although the average rating does not necessarily mean every category or app performs equally well.
+### Q1. What is the average rating of apps?
 
-2. How are apps distributed by size group?
+**Finding:** The average app rating is **4.17 out of 5**, indicating
+generally positive user ratings across the dataset.
 
-Finding: The <10 MB group contains the most apps, with approximately 5.0K apps, followed by 10–25 MB (2.1K) and 25–50 MB (1.6K). Apps above 100 MB are very limited.
+**Insight:** Overall user satisfaction appears strong, although
+individual apps and categories can perform differently.
 
-Insight: The dataset is heavily dominated by smaller-sized apps, suggesting that developers generally favor relatively lightweight applications.
+### Q2. How are apps distributed by size group?
 
-3. What proportion of apps are free vs. paid?
+**Finding:** The **\<10 MB** group contains the most apps at
+approximately **5.0K**, followed by **10--25 MB (2.1K)** and **25--50 MB
+(1.6K)**. Apps above 100 MB are very limited.
 
-Finding: Approximately 92.17% of apps are free, while only 7.83% are paid.
+**Insight:** The dataset is heavily dominated by smaller-sized apps,
+suggesting that developers generally favor lightweight applications.
 
-Insight: The Google Play Store dataset is strongly dominated by the freemium/free distribution model, indicating that free apps are far more common than paid apps.
+### Q3. What proportion of apps are free vs. paid?
 
-4. What is the distribution of apps by content rating?
+**Finding:** Approximately **92.17%** of apps are free, while **7.83%**
+are paid.
 
-Finding: Apps rated Everyone dominate the dataset with approximately 7.9K apps, followed by Teen (1.0K) and Mature 17+ (0.4K).
+**Insight:** Free apps strongly dominate the dataset, indicating that
+the free/freemium model is far more common than paid distribution.
 
-Insight: Most apps target a broad/general audience, with relatively fewer applications specifically targeted toward mature users.
+### Q4. What is the distribution of apps by content rating?
 
-5. Which apps have the most installs?
+**Finding:** **Everyone** apps dominate the dataset with approximately
+**7.9K apps**, followed by **Teen (1.0K)** and **Mature 17+ (0.4K)**.
 
-Finding: Several major apps, including Facebook, Gmail, Google, Google Chrome, Google Drive, Google News, Google Photos, Google Play Books, and Google Play Games, each reach approximately 1 billion installs.
+**Insight:** Most apps target a broad audience, while relatively fewer
+apps are specifically targeted toward mature users.
 
-Insight: The highest-install segment is dominated by widely used Google services and major social platforms, demonstrating the scale achieved by established applications.
+### Q5. Which apps have the most installs?
 
-Important: Since multiple apps have the same displayed install value of 1.00B, these apps are tied at the top rather than one app being definitively ranked above the others.
+**Finding:** Several major apps---including Facebook, Gmail, Google,
+Google Chrome, Google Drive, Google News, Google Photos, Google Play
+Books, and Google Play Games---reach approximately **1 billion
+installs**.
 
-6. How many apps have a rating of 4 or higher?
+**Insight:** The highest-install segment is dominated by established
+Google services and major social platforms, demonstrating the scale
+achieved by widely adopted applications.
 
-Finding: 6,286 apps have a rating of 4.0 or higher.
+> **Note:** Multiple apps share the displayed 1.00B install value, so
+> they are tied at the top.
 
-Insight: A substantial portion of the rated apps achieves a strong user-rating threshold, indicating generally favorable user reception across the dataset.
+### Q6. How many apps have a rating of 4 or higher?
 
-7. What is the average number of reviews for free vs. paid apps?
+**Finding:** **6,286 apps** have a rating of **4.0 or higher**.
 
-Finding: Free apps have an average of approximately 234.27K reviews, compared with only 8.72K reviews for paid apps.
+**Insight:** A substantial portion of rated apps achieves a strong
+rating threshold, indicating generally favorable user reception.
 
-Insight: Free apps attract far greater user engagement through reviews than paid apps, likely reflecting their much larger user base and lower barrier to adoption.
+### Q7. What is the average number of reviews for free vs. paid apps?
 
-8. Which categories have the largest average app size?
+**Finding:** Free apps have an average of approximately **234.27K
+reviews**, compared with **8.72K** for paid apps.
 
-Finding: Game has the highest average app size at approximately 42 MB, followed by Family (27 MB), while Travel & Local and Sports average around 24 MB.
+**Insight:** Free apps attract substantially greater review engagement,
+likely because their lower adoption barrier results in a much larger
+user base.
 
-Insight: Game apps tend to require substantially more storage than most other categories, potentially reflecting richer graphics, media, and functionality.
+### Q8. Which categories have the largest average app size?
 
-9. How many apps were updated in 2018?
+**Finding:** **Game** has the highest average app size at approximately
+**42 MB**, followed by **Family (27 MB)**. Travel & Local and Sports
+average around **24 MB**.
 
-Finding: 6,284 apps in the dataset were updated during 2018.
+**Insight:** Game apps tend to require more storage, potentially due to
+richer graphics, media, and functionality.
 
-Insight: A large proportion of the apps received updates during 2018, indicating that ongoing maintenance and feature updates were common among the applications represented in the dataset.
+### Q9. How many apps were updated in 2018?
 
+**Finding:** **6,284 apps** were updated during 2018.
 
-## Medium Questions — Findings & Insights
+**Insight:** A large number of apps received updates in 2018, indicating
+substantial maintenance and feature-development activity.
 
-1. How does the number of installs relate to app ratings?
+------------------------------------------------------------------------
 
-Finding: The scatter plot shows a slight positive relationship between installs and ratings. The trend line slopes upward, although ratings vary considerably across different install levels.
+## Medium Questions
 
-Insight: Apps with higher install volumes tend to have slightly higher ratings overall, but installs alone do not strongly determine user ratings. Other factors such as app quality, category, and user experience likely influence ratings.
+### Q1. How does the number of installs relate to app ratings?
 
-2. Which categories have the highest average ratings?
+**Finding:** The scatter plot shows a **slight positive relationship**
+between installs and ratings, although ratings vary considerably across
+install levels.
 
-Finding: Events has the highest average rating at 4.44, followed by Education (4.36), Art & Design (4.36), Books & Reference (4.34), and Personalization (4.33).
+**Insight:** Higher install volumes are associated with slightly higher
+ratings, but installs alone do not strongly determine user satisfaction.
 
-Insight: These categories demonstrate strong user satisfaction, with all five maintaining average ratings above 4.3, making them the highest-rated categories in the analysis.
+### Q2. Which categories have the highest average ratings?
 
-3. What is the relationship between paid app price and ratings?
+**Finding:** **Events** has the highest average rating at **4.44**,
+followed by Education (4.36), Art & Design (4.36), Books & Reference
+(4.34), and Personalization (4.33).
 
-Finding: The trend line shows a slight negative relationship between app price and rating. Most paid apps are concentrated in the lower price range, while ratings vary considerably across prices.
+**Insight:** These categories demonstrate strong user satisfaction, with
+the top five categories maintaining average ratings above 4.3.
 
-Insight: Higher pricing does not appear to translate into higher user ratings. In fact, the slight downward trend suggests that more expensive apps may receive marginally lower ratings, although the relationship is weak.
+### Q3. What is the relationship between paid app price and ratings?
 
-4. How does average rating vary by content rating?
+**Finding:** The trend line shows a **slight negative relationship**
+between price and rating, with considerable variation across price
+levels.
 
-Finding: Adults only 18+ apps have the highest average rating at approximately 4.3, followed by Everyone 10+ (4.2), Teen (4.2) and Everyone (4.2). Mature 17+ and Unrated apps are slightly lower at approximately 4.1.
+**Insight:** Higher pricing does not translate into higher ratings;
+however, the relationship is weak and price alone is not a strong
+predictor of satisfaction.
 
-Insight: Average ratings are relatively consistent across content-rating groups, ranging only from about 4.1 to 4.3. This suggests that the intended age audience has limited impact on overall app ratings.
+### Q4. How does average rating vary by content rating?
 
-5. Which genres have the most apps with over 1M installs?
+**Finding:** **Adults Only 18+** has the highest average rating at
+approximately **4.3**, while Mature 17+ and Unrated are slightly lower
+at approximately **4.1**. Other groups are around 4.2.
 
-Finding: Tools leads with 172 apps having over 1M installs, followed by Action (128) and Photography (123). Communication has 99, while Productivity has 91.
+**Insight:** Average ratings are relatively consistent across
+content-rating groups, suggesting that intended audience has limited
+influence on ratings.
 
-Insight: Tools, Action, and Photography have the strongest representation among highly installed apps, indicating broad adoption across these genres.
+### Q5. Which genres have the most apps with over 1M installs?
 
-6. How many apps were updated each year?
+**Finding:** **Tools** leads with **172 apps** having over 1M installs,
+followed by Action (128) and Photography (123). Communication has 99 and
+Productivity has 91.
 
-Finding: App updates increase substantially over time, with the number of updated apps rising from negligible levels in the early years to approximately 6.3K apps in 2018. The increase becomes particularly noticeable from 2014 onward.
+**Insight:** Tools, Action, and Photography have the strongest
+representation among highly installed apps.
 
-Insight: The strong rise in updates suggests that app development and maintenance activity expanded significantly over time, with 2018 representing the peak update year in the dataset.
+### Q6. How many apps were updated each year?
 
-7. What is the relationship between app size and installs?
+**Finding:** App updates increased substantially over time, rising from
+negligible levels in the early years to approximately **6.3K apps in
+2018**. Growth became particularly noticeable from 2014 onward.
 
-Finding: The scatter plot shows a slight positive relationship between app size and installs, as indicated by the upward trend line. However, there is substantial variation in installs across different app sizes.
+**Insight:** App development and maintenance activity expanded
+significantly over time, with 2018 representing the peak update year.
 
-Insight: Larger apps tend to have somewhat higher install volumes, but app size alone is not a strong predictor of popularity. Many smaller apps also achieve high install numbers.
+### Q7. What is the relationship between app size and installs?
 
-8. Which apps have the highest number of reviews, and what are their ratings?
+**Finding:** The scatter plot shows a **slight positive relationship**
+between app size and installs, although there is substantial variation.
 
-Finding: Among the apps shown, Facebook has the highest number of reviews at approximately 78.2M, followed by Instagram (66.6M) and Messenger (56.6M). Their ratings range from 4.0 to 4.5, while Clean Master has a 4.7 rating with approximately 42.9M reviews.
+**Insight:** Larger apps tend to have somewhat higher install volumes,
+but app size alone is not a strong predictor of popularity.
 
-Insight: Highly reviewed apps generally have large user engagement, but a higher review count does not necessarily correspond to a higher rating. For example, Facebook has the most reviews but a lower rating than Clean Master and Instagram.
+### Q8. Which apps have the highest number of reviews, and what are their ratings?
 
-9. How does the content rating distribution differ between free and paid apps?
+**Finding:** Facebook has the highest number of reviews at approximately
+**78.2M**, followed by Instagram (**66.6M**) and Messenger (**56.6M**).
+Clean Master has a higher rating of **4.7** despite having fewer
+reviews.
 
-Finding: Free apps heavily dominate every content-rating group. The Everyone category has 7,248 free apps and 655 paid apps, making it the largest group overall. In total, there are 8,902 free apps compared with 756 paid apps.
+**Insight:** High review volume reflects strong user engagement, but
+review count does not necessarily correspond to a higher rating.
 
-Insight: The app market is strongly dominated by free applications regardless of content rating. The large difference between free and paid apps indicates that paid apps represent only a small portion of the overall dataset.
+### Q9. How does the content rating distribution differ between free and paid apps?
 
-10. What are the top 5 categories with the most installs?
+**Finding:** Free apps heavily dominate every content-rating group. The
+**Everyone** category contains **7,248 free apps** and **655 paid
+apps**. Overall, there are **8,902 free apps** compared with **756 paid
+apps**.
 
-Finding: Game has the highest total installs at 13.9B, followed by Communication (11.0B), Tools (8.0B), Productivity (5.8B), and Social (5.5B).
+**Insight:** The dataset is strongly dominated by free applications
+across all content-rating groups.
 
-Insight: Game and Communication are the leading categories by install volume, together accounting for a substantial share of overall app adoption. This indicates particularly strong user demand for entertainment and communication applications.
+### Q10. What are the top 5 categories with the most installs?
+
+**Finding:** **Game** leads with **13.9B installs**, followed by
+Communication (11.0B), Tools (8.0B), Productivity (5.8B), and Social
+(5.5B).
+
+**Insight:** Game and Communication are the leading categories by
+install volume, highlighting strong user demand for entertainment and
+communication applications.
+
+------------------------------------------------------------------------
+
+## Advanced Questions
+
+### Q1. How does content rating distribution differ between free and paid apps?
+
+**Status:** **Needs correction/verification.**
+
+The earlier visual for this question displayed individual apps with
+rating, review, and install totals rather than the required
+content-rating and free/paid distribution.
+
+**Recommendation:** Use the corrected free-vs-paid content-rating visual
+before adding a final business finding for Advanced Q1.
+
+### Q2. Analyze the trend of app updates over time. Are there noticeable patterns or seasonal trends?
+
+**Finding:** App update activity increased sharply over the analyzed
+period. Updates were very low from 2010--2012, began increasing from
+2013 onward, and reached approximately **6.3K in 2018**.
+
+**Insight:** The upward trend indicates substantial growth in app
+development and maintenance activity over time, with 2018 representing
+the peak update period.
+
+> **Note:** The data is aggregated by year, so it supports a yearly
+> trend analysis but does **not provide enough evidence to confirm
+> monthly or seasonal patterns**.
+
+### Q3. How does the average rating of apps change with the number of installs?
+
+**Finding:** Average ratings vary across install ranges, from
+approximately **4.04 to 4.37**. The **100M+** install group has the
+highest average rating at approximately **4.37**, while the
+**10K--100K** group has the lowest at approximately **4.04**.
+
+**Insight:** Very high install volume does not necessarily correspond to
+lower ratings. However, the relationship is not consistently linear,
+indicating that install volume alone does not determine satisfaction.
+
+### Q4. Perform sentiment analysis on app reviews to determine common patterns in high- and low-rated apps.
+
+**Finding:** Positive sentiment is substantially more prevalent in
+high-rated apps (**38.08%**) than in low-rated apps (**13.89%**), while
+negative sentiment is higher among low-rated apps (**18.61%**) than
+high-rated apps (**12.56%**). Average sentiment polarity is **0.19 for
+high-rated**, **0.11 for medium-rated**, and **-0.07 for low-rated**
+apps.
+
+**Insight:** Sentiment closely aligns with app ratings: high-rated apps
+tend to receive more positive feedback, while low-rated apps show more
+negative sentiment. This suggests that review sentiment is a useful
+indicator of overall user satisfaction.
+
+> **Note:** Unrated apps show an average polarity of 0.21, but they
+> should be excluded when interpreting the relationship between rating
+> and sentiment because they do not have a meaningful rating
+> classification.
+
+### Q5. What is the relationship between app genre and user ratings?
+
+**Finding:** Ratings vary across genres. **Adventure;Brain Games** has
+an average and median rating of **4.60**, while **Art & Design;Pretend
+Play** has an average rating of **3.90**. The overall average rating is
+**4.17**, with a median of **4.30**.
+
+**Insight:** User ratings are generally positive across genres, but
+certain genre combinations perform better or worse than others.
+Differences between average and median ratings also indicate that some
+genres may contain unusually high or low ratings.
+
+------------------------------------------------------------------------
+
+## Overall Key Takeaways
+
+1.  The dataset is strongly dominated by **free and smaller-sized
+    apps**.
+2.  **Game and Communication** are among the strongest categories by
+    install volume.
+3.  **Events** has the highest average rating among the analyzed
+    categories.
+4.  Install volume has only a **weak relationship with ratings**.
+5.  App update activity increased substantially, peaking in **2018**.
+6.  **Positive review sentiment is associated with higher-rated apps**,
+    while negative sentiment is more common among low-rated apps.
+7.  The dataset shows strong adoption of established apps and major
+    Google services.
