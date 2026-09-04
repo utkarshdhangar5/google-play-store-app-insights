@@ -223,3 +223,39 @@ Prioritize regular updates and maintenance.
 Analyze category-specific trends before launching new applications.
 Avoid assuming that higher pricing or larger app size automatically leads to better performance.
 Use review sentiment as an additional indicator alongside ratings and install metrics.
+
+
+## GitHub repository
+
+Google-Play-Store-Analytics/
+│
+├── Dashboard/
+│   ├── App_performance_and_engagement.png
+│   ├── Executive_Overview_dashboard.png
+|   ├── Reviews_and_sentiment_analysis.png
+│   └── powerbi_dashboard_file.pbix
+│
+├── Data/
+│   ├── Clean Data/
+|   |   ├── App_update_history.dax
+|   |   ├── Apps_Cleaned.csv
+|   |   └──  Reviews_Cleaned.csv
+│   └── Raw Data/
+|       ├── googleplaystore_user_reviews.csv
+|       ├── googleplaystore.csv
+|       └── license.txt
+│
+├── Documentation/
+|   ├── App Insights (PowerBI).pdf
+│   ├── Data_Dictionary.md
+|   ├── data_preparation_and_modeling.md
+│   └── Question_Wise_Analysis.md 
+│
+├── PowerBI/
+│   └── Google_Play_Store_Analytics.pbix
+|
+├── Report/
+│   └── Google_Play_Store_Analytics_Project_Report.pdf
+│
+├── README.md
+└── .gitignore
