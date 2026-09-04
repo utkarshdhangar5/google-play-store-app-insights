@@ -225,8 +225,9 @@ Avoid assuming that higher pricing or larger app size automatically leads to bet
 Use review sentiment as an additional indicator alongside ratings and install metrics.
 
 
-## GitHub repository
+##  Project Structure
 
+```text
 Google-Play-Store-Analytics/
 │
 ├── Dashboard/
@@ -259,3 +260,4 @@ Google-Play-Store-Analytics/
 │
 ├── README.md
 └── .gitignore
+```
